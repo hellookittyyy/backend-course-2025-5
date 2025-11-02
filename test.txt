@@ -1,0 +1,13 @@
+PART 2:
+    curl -X PUT --data-binary "@test_image.jpg" http://127.0.0.1:666/201
+    curl http://127.0.0.1:666/201 --output recieved_201.jpeg
+    curl -X DELETE http://127.0.0.1:666/201 
+
+PART 3:
+    curl -X GET http://127.0.0.1:666/404 > /dev/null
+    curl -X DELETE http://127.0.0.1:666/404
+    curl -X PUT --data-binary "@test_image.jpeg" http://127.0.0.1:666/999
+    curl -X GET http://127.0.0.1:666/999 > /dev/null
+    curl -X GET http://127.0.0.1:666/204 > /dev/null
+    etc.
+
