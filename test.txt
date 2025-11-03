@@ -12,3 +12,7 @@ PART 3:
     curl -i -X PUT --data-binary "@test_image.jpg" http://127.0.0.1:666/809
     etc.
 
+JUST CHECK FOR MYSELF:
+    curl -I  https://httpbin.org/get
+    curl  https://httpbin.org/get
+
